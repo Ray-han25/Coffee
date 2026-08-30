@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* ----------------common css pate st */
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none !important;
+    display: inline-block;
+}
+
+ul,
+li {
+    text-decoration: none;
+}
+
+/* ======================variabal */
+:root {
+    --font-play: "Playfair Display", serif;
+    --Button-color: #F9C06A;
+    --font-c: "Clicker Script", cursive;
+    --color-c: #603809;
+
+}
+
+/* ----------------common css pate end */
+
+.Nav_section {
+    width: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav .Kicona ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff !important;
+    font-family: var(--font-play);
+}
+
+.Nav_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.Nav_button a {
+    color: #fff;
+    font-family: var(--font-play);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.Nav_button div a {
+    color: black;
+}
+
+.common_button {
+    padding: 15px 27px;
+    background: var(--Button-color) !important;
+    border-radius: 24px;
+
+}
+
+
+
+
+/* -----------Nabvat  css pate st */
+/* -----------banner  css pate st */
+#Banner {
+    background-image: url(/img/coffee_image.png);
+    padding-top: 183px;
+    padding-bottom: 95px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.banner_text h2 {
+    font-size: 22px;
+    font-family: var(--font-play);
+    font-weight: 400;
+    color: #fff;
+}
+
+.banner_text h1 {
+    font-size: 220px;
+    font-family: "Clicker Script", cursive;
+    font-weight: 400;
+    color: #fff;
+}
+
+.banner_text p {
+    width: 527px;
+    font-size: 20px;
+    font-family: var(--font-play);
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+}
+
+.banner_text a {
+    font-family: var(--font-play);
+    color: #000;
+}
+
+/* -----------banner  css pate end */
+/* -----------Discover  css pate st */
+#Discover {
+    padding-top: 150px;
+}
+
+.Discover_text h2 {
+    padding-top: 71px;
+    font-size: 54px;
+    font-weight: 600;
+    font-family: var(--font-play);
+    color: var(--color-c);
+}
+
+.Discover_text p {
+    width: 585px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #707070;
+    margin-top: 29px;
+    margin-bottom: 29px;
+}
+
+.Discover_text a {
+    font-family: var(--font-play);
+    color: #000;
+}
+
+.Discover_img {
+    vertical-align: middle;
+}
+
+/* ----------------Discover  css pate end*/
+/* ----------------Menu css pate st */
+
+
+
+.common_text h2 {
+    font-size: 54px;
+    font-weight: 600;
+    font-family: var(--font-play);
+    color: var(--color-c);
+    text-align: center;
+}
+
+.common_text p {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #707070;
+    line-height: 30px;
+    text-align: center;
+      margin-bottom: 32px;
+
+}
+
+.Mene_tex {
+    width: fit-content;
+    padding: 0px 0px 42px 0px !important;
+    background: #fff9f1;
+     position: relative;
+     border: 1px solid #fce1b8;
+
+
+}
+
+.Mene_tex h2 {
+   
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--font-play);
+    color: #603809;
+    text-align: center;
+    margin-top: 14px;
+}
+.Mene_tex h4 {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #1E1E1E;
+    text-align: center;
+    margin-top: 14px;
+}
+.Mene_tex p {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--font-play);
+    color: #603809;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.Mune_buto {
+    color: #000;
+    position: absolute;
+    bottom: -23px;
+    left: 71px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------Menu css pate end */
+/* ----------------common css pate st */
