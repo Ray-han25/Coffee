@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+
 a {
     text-decoration: none !important;
     display: inline-block;
@@ -25,6 +26,7 @@ li {
     --Button-color: #F9C06A;
     --font-c: "Clicker Script", cursive;
     --color-c: #603809;
+    --crad_color:#fff9f1 ;
 
 }
 
@@ -216,13 +218,111 @@ nav .Kicona ul li a {
 
 
 
-
-
-
-
-
-
-
-
 /* ----------------Menu css pate end */
-/* ----------------common css pate st */
+/* ----------------different css pate st */
+#different{
+    padding-top: 82px;
+}
+.crad_row{
+    width: 280px;
+    padding-top: 36px;
+    background: var(--crad_color);
+    text-align: center;
+    padding-bottom: 36px;
+    border: 1px solid #fce1b8;
+    transition: all linear .4s;
+}
+.crad_row div{
+    font-size: 88px;
+    color: #000;
+}
+  
+.crad_row h2{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: var(--font-play);
+    color: #603809;
+}
+.crad_row p{
+    width: 176px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #707070;
+    margin: 0 auto;
+    margin-top: 8px;
+  
+}
+.crad_row:hover{
+    background-color: #ffeed8;
+}
+
+.today{
+    margin-top: 25px;
+    text-align: center;
+}
+.today p{
+    margin-bottom: 0 !important;
+
+}
+.today a{
+    color: #1E1E1E;
+    margin-top: 38px;
+}
+
+/* ----------------different css pate st */
+/* ----------------Order css pate st */
+#Order{
+    margin-top: 38px;
+    background-image: url(/img/Group\ 61.png);
+    padding-top: 54px;
+    padding-bottom: 54px;
+    background-size: cover;
+}
+.Order_row{
+    justify-content: space-between;
+}
+.Order_text h2{
+    width: 589px;
+    font-size: 54px;
+    font-weight: 600;
+    color: #fff;
+    font-family: var(--font-play);
+    margin-bottom: 22px;
+    margin-top: 150px;
+}
+.Order_text p{
+    width: 409px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    font-family: var(--font-play);
+    margin-bottom: 22px;
+}
+.Order_text a{
+    color: #1E1E1E;
+}
+
+/* ----------------Order css pate end */
+
+/* ----------------feedback css pate st */
+#feedback{
+margin-top: 82px;
+margin-bottom: 138px;
+    
+}
+.crad_feedback{
+    padding: 54px 100px 101px 29px;
+}
+.crad_feedback h2{
+  font-size: 220px;
+  font-weight: 600;
+  font-family: var(--font-play);
+  color: #603809;
+}
+/* ----------------feedback css pate end */
+
+
+
+
+/* ----------------Order css pate st */
