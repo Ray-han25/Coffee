@@ -26,7 +26,7 @@ li {
     --Button-color: #F9C06A;
     --font-c: "Clicker Script", cursive;
     --color-c: #603809;
-    --crad_color:#fff9f1 ;
+    --crad_color: #fff9f1;
 
 }
 
@@ -168,7 +168,7 @@ nav .Kicona ul li a {
     color: #707070;
     line-height: 30px;
     text-align: center;
-      margin-bottom: 32px;
+    margin-bottom: 32px;
 
 }
 
@@ -176,14 +176,14 @@ nav .Kicona ul li a {
     width: fit-content;
     padding: 0px 0px 42px 0px !important;
     background: #fff9f1;
-     position: relative;
-     border: 1px solid #fce1b8;
+    position: relative;
+    border: 1px solid #fce1b8;
 
 
 }
 
 .Mene_tex h2 {
-   
+
     font-size: 22px;
     font-weight: 600;
     font-family: var(--font-play);
@@ -191,6 +191,7 @@ nav .Kicona ul li a {
     text-align: center;
     margin-top: 14px;
 }
+
 .Mene_tex h4 {
     font-size: 16px;
     font-weight: 400;
@@ -199,6 +200,7 @@ nav .Kicona ul li a {
     text-align: center;
     margin-top: 14px;
 }
+
 .Mene_tex p {
     font-size: 18px;
     font-weight: 600;
@@ -220,10 +222,21 @@ nav .Kicona ul li a {
 
 /* ----------------Menu css pate end */
 /* ----------------different css pate st */
-#different{
+#different {
     padding-top: 82px;
 }
-.crad_row{
+
+.different_text {
+    position: relative;
+}
+
+.different_text div {
+    position: absolute;
+    bottom: 0;
+    right: -10px;
+}
+
+.crad_row {
     width: 280px;
     padding-top: 36px;
     background: var(--crad_color);
@@ -232,18 +245,20 @@ nav .Kicona ul li a {
     border: 1px solid #fce1b8;
     transition: all linear .4s;
 }
-.crad_row div{
+
+.crad_row div {
     font-size: 88px;
     color: #000;
 }
-  
-.crad_row h2{
+
+.crad_row h2 {
     font-size: 28px;
     font-weight: 600;
     font-family: var(--font-play);
     color: #603809;
 }
-.crad_row p{
+
+.crad_row p {
     width: 176px;
     font-size: 20px;
     font-weight: 400;
@@ -251,38 +266,43 @@ nav .Kicona ul li a {
     color: #707070;
     margin: 0 auto;
     margin-top: 8px;
-  
+
 }
-.crad_row:hover{
+
+.crad_row:hover {
     background-color: #ffeed8;
 }
 
-.today{
+.today {
     margin-top: 25px;
     text-align: center;
 }
-.today p{
+
+.today p {
     margin-bottom: 0 !important;
 
 }
-.today a{
+
+.today a {
     color: #1E1E1E;
     margin-top: 38px;
 }
 
 /* ----------------different css pate st */
 /* ----------------Order css pate st */
-#Order{
+#Order {
     margin-top: 38px;
     background-image: url(/img/Group\ 61.png);
     padding-top: 54px;
     padding-bottom: 54px;
     background-size: cover;
 }
-.Order_row{
+
+.Order_row {
     justify-content: space-between;
 }
-.Order_text h2{
+
+.Order_text h2 {
     width: 589px;
     font-size: 54px;
     font-weight: 600;
@@ -291,7 +311,8 @@ nav .Kicona ul li a {
     margin-bottom: 22px;
     margin-top: 150px;
 }
-.Order_text p{
+
+.Order_text p {
     width: 409px;
     font-size: 20px;
     font-weight: 400;
@@ -299,30 +320,210 @@ nav .Kicona ul li a {
     font-family: var(--font-play);
     margin-bottom: 22px;
 }
-.Order_text a{
+
+.Order_text a {
     color: #1E1E1E;
 }
 
 /* ----------------Order css pate end */
 
 /* ----------------feedback css pate st */
-#feedback{
-margin-top: 82px;
-margin-bottom: 138px;
-    
+#feedback {
+    margin-top: 82px;
+    margin-bottom: 138px;
+
 }
-.crad_feedback{
+
+.crad_feedback {
     padding: 54px 100px 101px 29px;
+    background: #fff9f1;
+    border: 1px solid #fce1b8;
+    margin-bottom: 62px;
+    position: relative;
 }
-.crad_feedback h2{
-  font-size: 220px;
-  font-weight: 600;
-  font-family: var(--font-play);
-  color: #603809;
+
+.crad_feedback .fist {
+    margin-left: 130px;
 }
+
+.crad_feedback p {
+    width: 761px;
+    margin-left: 54px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #707070;
+    text-align: center;
+    line-height: 36px;
+    margin: 0 auto;
+}
+
+.crad_feedback h2 {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: var(--font-play);
+    color: #603809;
+    text-align: center;
+}
+
+.crad_feedback h5 {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #707070;
+    text-align: center;
+    line-height: 34px;
+}
+
+.feedback_rel {
+    position: relative;
+
+}
+
+.crad_feedback .feedback_img {
+    position: absolute;
+    bottom: -70px;
+    left: 41%;
+}
+
+.feedback_rel .div_img {
+    position: absolute;
+    top: -87px;
+    right: -297px;
+    z-index: 10;
+}
+
+.feedback_rel .div_img_right {
+    position: absolute;
+    bottom: -14px;
+    left: -224px;
+    z-index: 9;
+}
+
+.sameButton {
+    width: 82px;
+    height: 82px;
+    border: none;
+    border-radius: 16px;
+    background: #F9C06A;
+    position: absolute;
+    top: 36%;
+    transition: ease .4s;
+}
+
+.nextaaarr {
+    right: -34px;
+}
+
+.prvaaarr {
+    left: -33px;
+    z-index: 1;
+}
+
+.sameButton:hover {
+    background: #000;
+    color: #fff9f1;
+}
+
 /* ----------------feedback css pate end */
-
-
-
-
 /* ----------------Order css pate st */
+#footer_pate_one {
+    background-image: url(/img/lest.png);
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* ----------------Order css pate end */
+/* ----------------footer css pate st */
+.footer_text h2 {
+    color: #fff;
+
+}
+
+.footer_text p {
+    color: #fff;
+
+}
+
+.footer_input {
+    width: 642px;
+    height: 66px;
+    border-radius: 4px;
+    background: #fff9f1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer_input input {
+    width: 100%;
+    border: none;
+    padding-left: 30px;
+}
+
+input::placeholder {
+    font-size: 20;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #a8a49f;
+    margin-left: 30px;
+}
+
+.footer_input button {
+    padding: 16px 24px 18px 24px;
+    border-radius: 4px;
+    background: #F9C06A;
+    font-size: 22px;
+    font-weight: 600;
+    font-family: var(--font-play);
+    border: none;
+    color: #603809;
+    transition: all linear .4s;
+}
+
+.footer_input button:active {
+    transform: scale(1.1);
+}
+
+#footer_pate_tow {
+    background-color: #633b0b;
+    background-image: url("/img/foote_img.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 162px;
+    padding-bottom: 72px;
+}
+
+.singel_col p {
+    width: 365px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 33px;
+    line-height: 22px;
+
+}
+
+.footer_icon div {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: white;
+    transition: ease .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.footer_icon div:hover {
+    background: #fff;
+    color: rgb(75, 75, 214);
+}
+
+/* ----------------footer css pate end */
