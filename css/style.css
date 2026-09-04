@@ -71,7 +71,21 @@ nav .Kicona ul li a {
     border-radius: 24px;
 
 }
+nav .Kicona ul li a {
+    position: relative;
+}
+nav .Kicona ul li a::after {
+content: '';
+width: fit-content;
+height: 1px;
+position: absolute;
+bottom: 15px;
+left: 0;
+background: red;
+z-index: 11;
+/* transition: all linear .4s; */
 
+}
 
 
 
@@ -494,7 +508,10 @@ input::placeholder {
     padding-top: 162px;
     padding-bottom: 72px;
 }
-
+.singel_col{
+    display: flex;
+    gap: 81px;
+}
 .singel_col p {
     width: 365px;
     font-size: 14px;
@@ -507,6 +524,7 @@ input::placeholder {
 
 }
 
+
 .footer_icon div {
     width: 36px;
     height: 36px;
@@ -517,13 +535,60 @@ input::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
+
+.footer_icon{
+    display: flex;
+    gap: 20px;
+}
+
 
 .footer_icon div:hover {
     background: #fff;
-    color: rgb(75, 75, 214);
+    
 }
+.footer_icon div:hover .instagr{
+    color: #981ed8;
+   
+}
+.footer_icon div:hover .whatsup{
+    color: #25d366;
+   
+}
+.footer_icon div:hover .twiter{
+    color: #222222;
+   
+}
+.Same_footer_lest_text h2{
 
+    font-size: 26px;
+    font-weight: 600;
+    font-family: var(--font-play);
+    color: #fff;
+}
+.F_About h2{
+    margin-bottom: 55px;
+}
+.c_About h2{
+    margin-bottom: 55px;
+}
+.c_About p{
+   width: 304px;
+}
+.lest_footerP{
+    display: flex;
+}
+.png{
+    position: relative;
+}
+.png .cap {
+    position: absolute;
+    top: -364px;
+    left: -208px;
+}
+.png .cap2 {
+    position: absolute;
+    top: -364px;
+    right:  -208px;
+}
 /* ----------------footer css pate end */
