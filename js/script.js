@@ -1,4 +1,8 @@
-AOS.init();
+AOS.init({
+  duration: 1000,
+  delay: 300,
+  once: false
+});
 $('.feedback_silder').slick({
   infinite: true,
   slidesToShow: 1,
