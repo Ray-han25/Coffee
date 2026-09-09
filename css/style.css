@@ -19,9 +19,15 @@ ul,
 li {
     text-decoration: none;
 }
- h1 ,h2 ,h3,h4,h6{
+
+h1,
+h2,
+h3,
+h4,
+h6 {
     padding: 0 !;
- }
+}
+
 /* ======================variabal */
 :root {
     --font-play: "Playfair Display", serif;
@@ -41,9 +47,11 @@ li {
     left: 0;
     z-index: 1;
 }
+
 nav .Kicona ul {
     gap: 60px;
 }
+
 nav .Kicona ul li a {
     font-size: 14px;
     font-weight: 400;
@@ -56,6 +64,7 @@ nav .Kicona ul li a {
     align-items: center;
     justify-content: center;
     gap: 35px;
+    margin-top: 10px;
 }
 
 .Nav_button a {
@@ -65,8 +74,10 @@ nav .Kicona ul li a {
     font-size: 14px;
 }
 
-.Nav_button div a {
-    color: black;
+.Nav_button .button_sing {
+    margin-top: 20px;
+    display: flex;
+    gap: 35px;
 }
 
 .common_button {
@@ -75,31 +86,139 @@ nav .Kicona ul li a {
     border-radius: 24px;
 
 }
+
+nav .Kicona ul {
+    padding-top: 17px;
+}
+
 nav .Kicona ul li a {
     position: relative;
     padding: 0 !important;
-   
+
 }
+
 nav .Kicona ul li a::after {
-content: '';
-width: 0;
-height: 2px;
-position: absolute;
-bottom: 1px;
-left: 0;
-background: rgb(233, 227, 227);
-z-index: 11;
-border-radius: 5px;
-transition: .4s all linear;
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    background: rgb(233, 227, 227);
+    z-index: 11;
+    border-radius: 5px;
+    transition: .4s all linear;
 
 
 
 }
-nav .Kicona ul li:hover a::after{
-  width: 100%;
+
+nav .Kicona ul li:hover a::after {
+    width: 100%;
 }
 
+.samneLog {
+    border: none;
+}
 
+.samneLog:active {
+    transform: scale(1.1);
+}
+
+.sign {
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    font-family: var(--font-play);
+}
+
+.sing_singuP {
+    width: 100%;
+    height: 100vh;
+    background: rgb(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.login_crad {
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    animation: pop .8s ease;
+
+
+}
+
+.login_crad h2 {
+    font-size: 40px;
+    font-weight: 400;
+    font-family: var(--font-play);
+    color: #F9C06A;
+    text-align: center;
+
+}
+
+.login_crad .Login_input {
+    width: 400px;
+    height: 44px;
+    border-radius: 10px;
+    background: #F8F0F0;
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+
+
+
+}
+
+.Login_input input {
+    width: 100%;
+    border: none;
+    background: #F8F0F0;
+
+
+
+    padding: 9px 0px 0px 20px;
+}
+
+.login_crad .Loginbutton {
+    width: 400px;
+    height: 44px;
+    border-radius: 10px;
+    background: #fce1b8;
+    margin-top: 20px;
+    border: none;
+}    
+.button_login2{
+        background: #c0e0c3 !important;
+}
+
+.login_crad .Loginbutton:active{
+    transform: scale(1.1);
+ 
+}  
+ .same_input{
+   border-bottom: 1px solid red;
+  transition: 0.5s ease;
+ }
+
+@keyframes pop{
+    from {
+        transform: translate(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
 
 /* -----------Nabvat  css pate st */
 /* -----------banner  css pate st */
@@ -255,11 +374,13 @@ nav .Kicona ul li:hover a::after{
 .different_text {
     position: relative;
 }
+
 .different_text div {
     position: absolute;
     bottom: 0;
     right: -206px;
 }
+
 .crad_row {
     width: 280px;
     padding-top: 36px;
@@ -518,10 +639,12 @@ input::placeholder {
     padding-top: 162px;
     padding-bottom: 72px;
 }
-.singel_col{
+
+.singel_col {
     display: flex;
     gap: 81px;
 }
+
 .singel_col p {
     width: 365px;
     font-size: 14px;
@@ -547,7 +670,7 @@ input::placeholder {
     align-items: center;
 }
 
-.footer_icon{
+.footer_icon {
     display: flex;
     gap: 20px;
 }
@@ -555,50 +678,62 @@ input::placeholder {
 
 .footer_icon div:hover {
     background: #fff;
-    
+
 }
-.footer_icon div:hover .instagr{
+
+.footer_icon div:hover .instagr {
     color: #981ed8;
-   
+
 }
-.footer_icon div:hover .whatsup{
+
+.footer_icon div:hover .whatsup {
     color: #25d366;
-   
+
 }
-.footer_icon div:hover .twiter{
+
+.footer_icon div:hover .twiter {
     color: #222222;
-   
+
 }
-.Same_footer_lest_text h2{
+
+.Same_footer_lest_text h2 {
 
     font-size: 26px;
     font-weight: 600;
     font-family: var(--font-play);
     color: #fff;
 }
-.F_About h2{
+
+.F_About h2 {
     margin-bottom: 55px;
 }
-.c_About h2{
+
+.c_About h2 {
     margin-bottom: 55px;
 }
-.c_About p{
-   width: 304px;
+
+.c_About p {
+    width: 304px;
 }
-.lest_footerP{
+
+.lest_footerP {
     display: flex;
 }
-.png{
+
+.png {
     position: relative;
 }
+
 .png .cap {
     position: absolute;
     top: -364px;
     left: -208px;
 }
+
 .png .cap2 {
     position: absolute;
     top: -364px;
-    right:  -208px;
+    right: -208px;
 }
+
 /* ----------------footer css pate end */
