@@ -70,6 +70,14 @@ if(Email.value=='')emailN.classList.add('same_input')
 if(password.value=='') passwordN.classList.add('same_input')
 if(confirmPassword.value=='')  confirmN.classList.add('same_input')
 if(password.value!==confirmPassword.value) return confirmN.classList.add('same_input') 
+if (UseName.value=='' ||Email.value=='' ) {
+  useN.classList.add('same_input')
+  emailN.classList.add('same_input')
+  confirmN.classList.add('same_input') 
+  passwordN.classList.add('same_input')
+  return
+ }
+
   const url ='https://api.freeapi.app/api/v1/users/register';
 fetch(url,  {
   method: 'POST',
@@ -140,7 +148,100 @@ const hendelLogin=(event)=>{
 event.preventDefault()
 if(longu.value=='') logingUsediv.classList.add('same_input')
 if(logPass.value=='') logPassDiv.classList.add('same_input')
+   if (longu.value === '' || logPass.value === '') {
+     return;
+   }
+const urlLog='https://api.freeapi.app/api/v1/users/login'
+fetch( urlLog ,{
+   method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+   body: JSON.stringify({
+    password: logPass.value ,
+    username: longu.value
+  })
+})
+.then(res=>{
+  if(!res.ok){
+    throw new Error(res.statusText)
+  }
+  else{
+    return res.json();
+  }
+})
+.then((date)=>{
+   console.log(date.message)
+   Toastify({
+  text: date.message,
+  duration: 3000,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "center", // `left`, `center` or `right`
+  style: {
+    background: "green",
+  },
+}).showToast();
+ window.location.href = 'index.html';
+})
+.catch((err)=>{
+    console.log(err.message)
+   Toastify({
+  text: err.message,
+  duration: 3000,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "center", // `left`, `center` or `right`
+  style: {
+    background: "red",
+  },
+}).showToast();
+})
+
+
+
 }
+
+// const hendelLogin = (event) => {
+//   event.preventDefault();
+
+//   if (longu.value === '') {
+//     logingUsediv.classList.add('same_input');
+//   }
+
+//   if (logPass.value === '') {
+//     logPassDiv.classList.add('same_input');
+//   }
+
+//   // কোনো input খালি থাকলে এখানেই থেমে যাবে
+//  
+
+//   const urlLog = 'https://api.freeapi.app/api/v1/users/login';
+
+//   fetch(urlLog, {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({
+//       username: longu.value,
+//       password: logPass.value
+//     })
+//   })
+//     .then((res) => {
+//       if (!res.ok) {
+//         throw new Error('Login failed');
+//       }
+
+//       return res.json();
+//     })
+//     .then((data) => {
+//       console.log(data.message);
+//     })
+//     .catch((err) => {
+//       console.log(err.message);
+//     });
+// };
 logingUsediv.addEventListener('input',()=>{
   logingUsediv.classList.remove('same_input')
 })
